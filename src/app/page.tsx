@@ -90,12 +90,12 @@ export default function Home() {
             {benefits.map(([icon, title, text]) => {
               const Icon = icons[icon];
               return (
-                <article key={title} className="card p-10">
-                  <span className="mb-8 inline-grid h-14 w-14 place-items-center rounded-2xl bg-navy/5 text-[#927000]">
-                    <Icon size={28} />
+                <article key={title} className="card feature-card">
+                  <span className="feature-icon">
+                    <Icon size={23} />
                   </span>
-                  <h3 className="text-xl">{title}</h3>
-                  <p className="mt-4 text-sm leading-7 text-muted">{text}</p>
+                  <h3 className="mt-6 text-xl">{title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-muted">{text}</p>
                 </article>
               );
             })}
@@ -111,7 +111,7 @@ export default function Home() {
             text="End-to-end logistics coordination designed for high-performance commercial shipping."
           />
           <div className="grid gap-8 lg:grid-cols-3">
-            <article className="relative min-h-[450px] overflow-hidden rounded-[2rem] bg-navy p-10 text-white lg:col-span-2 lg:p-16">
+            <article className="relative min-h-[360px] overflow-hidden rounded-[2rem] bg-navy p-10 text-white lg:col-span-2 lg:p-12">
               <Image
                 src="/images/services/freight-trailer.png"
                 alt="Freight trailer at a distribution facility"
@@ -120,9 +120,9 @@ export default function Home() {
                 sizes="(max-width:1024px) 100vw, 66vw"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-transparent" />
-              <div className="relative flex h-full max-w-md flex-col justify-end">
+              <div className="relative z-10 flex h-full max-w-lg flex-col justify-center">
                 <p className="eyebrow !text-gold">Primary Service</p>
-                <h3 className="text-3xl text-white">
+                <h3 className="text-3xl !text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)]">
                   Full Truckload Transportation
                 </h3>
                 <p className="mt-4 text-sm leading-6 text-white/65">
@@ -140,19 +140,17 @@ export default function Home() {
                 </ul>
               </div>
             </article>
-            <article className="card flex flex-col justify-between rounded-[2rem] p-10">
-              <Sparkles className="text-[#967300]" />
-              <div>
-                <h3 className="text-xl">Regional & Long Haul</h3>
-                <p className="mt-3 text-sm leading-6 text-muted">
-                  Strategic lane management for both short-range regional loops
-                  and cross-country long haul routes.
-                </p>
-              </div>
+            <article className="card service-small-card service-small-card-top">
+              <span className="feature-icon"><Sparkles size={23} /></span>
+              <h3 className="mt-6 text-xl">Regional & Long Haul</h3>
+              <p className="mt-3 text-sm leading-6 text-muted">
+                Strategic lane management for both short-range regional loops
+                and cross-country long haul routes.
+              </p>
             </article>
-            <article className="card rounded-[2rem] p-10">
-              <Boxes className="text-[#967300]" />
-              <h3 className="mt-20 text-xl">Dedicated Solutions</h3>
+            <article className="card service-small-card">
+              <span className="feature-icon"><Boxes size={23} /></span>
+              <h3 className="mt-6 text-xl">Dedicated Solutions</h3>
               <p className="mt-3 text-sm leading-6 text-muted">
                 Customized transportation agreements to provide guaranteed
                 capacity for your recurring freight needs.
