@@ -224,7 +224,7 @@ export default function Home() {
             alt="Professional logistics safety inspection"
             width={900}
             height={700}
-            className="aspect-square rounded-[2.5rem] object-cover shadow-2xl"
+            className="aspect-[16/9] rounded-[2.5rem] object-cover shadow-2xl"
           />
           <div>
             <SectionHeading
@@ -275,7 +275,7 @@ export default function Home() {
             alt="Truck operating at a modern logistics warehouse"
             width={900}
             height={700}
-            className="aspect-[4/5] rounded-[2.5rem] object-cover shadow-2xl"
+            className="aspect-[2/2] rounded-[2.5rem] object-cover shadow-2xl"
           />
         </div>
       </section>
