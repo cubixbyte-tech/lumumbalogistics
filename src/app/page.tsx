@@ -219,14 +219,16 @@ export default function Home() {
 
       <section id="safety" className="section scroll-mt-20 bg-[#f3f4f5]">
         <div className="container grid items-center gap-20 lg:grid-cols-2">
-          <Image
-            src="/images/safety/safety-inspection.png"
-            alt="Professional logistics safety inspection"
-            width={900}
-            height={700}
-            className="aspect-[16/9] rounded-[2.5rem] object-cover shadow-2xl"
-          />
-          <div>
+          <div className="order-2 lg:order-1">
+            <Image
+              src="/images/safety/safety-inspection.png"
+              alt="Professional logistics safety inspection"
+              width={900}
+              height={700}
+              className="aspect-[16/9] rounded-[2.5rem] object-cover shadow-2xl"
+            />
+          </div>
+          <div className="order-1 lg:order-2">
             <SectionHeading
               eyebrow="Operational Excellence"
               title="Safety & Compliance First"
@@ -292,8 +294,8 @@ export default function Home() {
       </section>
       <section id="quote" className="section scroll-mt-20">
         <div className="container">
-          <div className="grid items-center gap-20 rounded-[3rem] bg-navy p-12 text-white lg:grid-cols-2 lg:p-24">
-            <div>
+          <div className="grid items-center gap-8 rounded-[1.5rem] bg-navy p-4 text-white sm:gap-12 sm:rounded-[3rem] sm:p-8 lg:grid-cols-2 lg:gap-20 lg:p-24">
+            <div className="min-w-0">
               <p className="eyebrow text-gold!">Start a conversation</p>
               <h2 className="text-white!">Ready to Optimize Your Logistics?</h2>
               <p className="mt-5 max-w-md text-sm leading-7 text-white/60">
@@ -301,7 +303,9 @@ export default function Home() {
                 much as you do. Let&apos;s move your business forward today.
               </p>
             </div>
-            <QuoteForm />
+            <div className="w-full min-w-0">
+              <QuoteForm />
+            </div>
           </div>
         </div>
       </section>
