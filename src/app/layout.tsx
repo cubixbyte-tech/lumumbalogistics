@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   title: { default: "Lumumba Logistics | Nationwide Freight Transportation", template: "%s | Lumumba Logistics" },
   description: siteConfig.description,
   keywords: ["freight transportation", "nationwide logistics", "full truckload", "commercial freight"],
+  manifest: "/manifest.webmanifest",
+  themeColor: "#000b1e",
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
   openGraph: { title: "Lumumba Logistics", description: siteConfig.description, type: "website", images: ["/images/hero/hero-truck1.png"] },
 };
 
