@@ -3,9 +3,9 @@ export const siteConfig = {
   shortName: "Lumumba",
   description:
     "Reliable nationwide freight transportation built on precision, safety, and clear communication.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.lumumbalogistics.com",
-  email: "dispatch@lumumbalogistics.com",
-  phone: "(555) 123-4567",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://lumumbalogistics.com",
+  email: "info@lumumbalogistics.com",
+  phone: "(901) 515-6054",
   address: "United States",
 };
 

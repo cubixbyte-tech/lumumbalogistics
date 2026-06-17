@@ -225,6 +225,7 @@ export default function Home() {
               alt="Professional logistics safety inspection"
               width={900}
               height={700}
+              loading="eager"
               className="aspect-[16/9] rounded-[2.5rem] object-cover shadow-2xl"
             />
           </div>
@@ -273,8 +274,8 @@ export default function Home() {
             </div>
           </div>
           <Image
-            src="/images/leadership/warehouse-truck.jpg"
-            alt="Truck operating at a modern logistics warehouse"
+            src="/images/leadership/leader.png"
+            alt="Leadership"
             width={900}
             height={700}
             className="aspect-[2/2] rounded-[2.5rem] object-cover shadow-2xl"
