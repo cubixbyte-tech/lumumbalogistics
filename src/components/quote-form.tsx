@@ -30,16 +30,13 @@ export function QuoteForm() {
         />
       </label>
       <label>
-        Shipping frequency
-        <select name="frequency" required defaultValue="">
-          <option value="" disabled>
-            Select shipping frequency
-          </option>
-          <option>Daily</option>
-          <option>Weekly</option>
-          <option>Monthly</option>
-          <option>One-time shipment</option>
-        </select>
+        Message
+        <textarea
+          name="message"
+          required
+          rows={4}
+          placeholder="Tell us about your freight, lane, timeline, or any special handling needs."
+        />
       </label>
       <input
         name="website"
