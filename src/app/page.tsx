@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -17,6 +18,31 @@ import { QuoteForm } from "@/components/quote-form";
 import { SectionHeading } from "@/components/section-heading";
 import { benefits, siteConfig } from "@/lib/site";
 
+
+export const metadata: Metadata = {
+  title: "Lumumba Logistics | Nationwide Freight Transportation",
+  description:
+    "Lumumba Logistics provides reliable 53-foot dry van, full truckload, regional, and long-haul freight transportation across the United States.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Lumumba Logistics | Nationwide Freight Transportation",
+    description:
+      "Reliable nationwide freight transportation, full truckload service, modern fleet operations, and safety-first logistics coordination.",
+    url: "/",
+    siteName: "Lumumba Logistics",
+    type: "website",
+    images: [
+      {
+        url: "/images/hero/hero-truck.png",
+        width: 1200,
+        height: 630,
+        alt: "Lumumba Logistics freight truck on the highway",
+      },
+    ],
+  },
+};
 const icons = { Truck, ScanLine, ShieldCheck, Clock3, Map, BadgeCheck };
 const servicePoints = [
   "53-foot dry van specialization",
