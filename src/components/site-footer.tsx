@@ -13,7 +13,7 @@ export function SiteFooter() {
         <div><h3 className="footer-title">Contact</h3><a href={`tel:${siteConfig.phone}`}><Phone size={14}/>{siteConfig.phone}</a><a href={`mailto:${siteConfig.email}`}><Mail size={14}/>{siteConfig.email}</a></div>
       </div>
       <div className="container flex flex-col gap-3 border-t border-white/10 py-5 text-xs text-white/50 sm:flex-row sm:justify-between">
-        <span>© {new Date().getFullYear()} Lumumba Logistics. All rights reserved.</span>
+        <span>&copy; {new Date().getFullYear()} Lumumba Logistics. All rights reserved.</span>
         <span className="flex gap-5"><Link href="/privacy-policy">Privacy Policy</Link><Link href="/terms-and-conditions">Terms & Conditions</Link></span>
       </div>
     </footer>
